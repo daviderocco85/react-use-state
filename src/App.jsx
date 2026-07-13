@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import { Accordion } from './components/Accordion';
+import { languages } from './data/languages.js'
 
-function App() {
+const App = () => (
+  <>
+    <header className="container">
+      <h1>Learn Web development</h1>
+      <Accordion data={languages} />;
+    </header>
+  </>
+);
 
-  return (
-    <>
-      Work in progress!
-
-    </>
-  )
-}
 
 export default App
