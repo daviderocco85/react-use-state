@@ -1,0 +1,10 @@
+#root header.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+#root header.container h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    background: #f8f9fa;
+}
