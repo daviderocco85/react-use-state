@@ -1,0 +1,16 @@
+.content-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    background: white;
+}
+
+.content-card h2 {
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+
+.content-card p {
+    font-size: 20px;
+    line-height: 1.6;
+}
