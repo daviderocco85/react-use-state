@@ -1,28 +1,27 @@
 import './Accordion.css'
 import { useState } from 'react'
+import { Button } from './Button';
+import { Card } from "./Card";
 
 
 export const Accordion = props => {
-    const [active, setActive] = useState(props.data[0].id);
-    const current = props.data.find(item => item.id === active);
+    const [active, setActive] = useState(props.data[0].id)
+    const currentCard = props.data.find(item => item.id === active);
+
     return (
         <>
-            <div className="tabs">
+            <div className="buttons">
                 {props.data.map((item) => (
-                    <button
+
+                    <Button
                         key={item.id}
-                        className={active === item.id ? "tab-btn active" : "tab-btn"}
-                        onClick={() => setActive(item.id)}
-                    >
-                        {item.title}
-                    </button>
+                        item={item}
+                        active={active}
+                        setActive={setActive}
+                    />
                 ))}
             </div>
-
-            <div className="content-box">
-                <h2>{current.title}</h2>
-                <p>{current.description}</p>
-            </div>
+            {currentCard && <Card title={currentCard.title} description={currentCard.description} />}
         </>
     )
 };
