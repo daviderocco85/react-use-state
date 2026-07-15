@@ -4,7 +4,7 @@ import './Button.css'
 export const Button = props => {
     return (
         <button
-            className={props.active === props.item.id ? "tab-btn active" : "tab-btn"}
+            className={props.active === props.item.id ? "btn active" : "btn"}
             onClick={() =>
                 props.setActive(props.item.id)
             }
