@@ -7,7 +7,7 @@ const App = () => (
   <>
     <header className="container">
       <h1>Learn Web development</h1>
-      <Accordion data={languages} />;
+      <Accordion data={languages} />
     </header>
   </>
 );
