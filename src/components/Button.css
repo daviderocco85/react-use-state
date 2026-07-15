@@ -1,4 +1,4 @@
-.tab-btn {
+.btn {
     background: #0d6efd;
     color: white;
     border: none;
@@ -9,11 +9,11 @@
     transition: .3s;
 }
 
-.tab-btn:hover {
+.btn:hover {
     background: #0b5ed7;
 }
 
-.tab-btn.active {
+.btn.active {
     background: #ffc107;
     color: #222;
 }
